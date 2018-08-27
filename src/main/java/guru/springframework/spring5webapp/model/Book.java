@@ -38,7 +38,7 @@ public class Book {
     }
 
     public Long getId() {
-        System.out.println("Hello world! aaa");
+
         return id;
     }
 
