@@ -1,6 +1,7 @@
 package guru.springframework.spring5webapp.model;
 
 import javax.persistence.*;
+import javax.xml.bind.SchemaOutputResolver;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -37,6 +38,7 @@ public class Book {
     }
 
     public Long getId() {
+        System.out.println("Hello world!");
         return id;
     }
 
