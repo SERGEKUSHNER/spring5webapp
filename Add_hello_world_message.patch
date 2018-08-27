@@ -1,0 +1,23 @@
+Index: src/main/java/guru/springframework/spring5webapp/model/Book.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/guru/springframework/spring5webapp/model/Book.java	(revision 646c2ef589b69bb0e800b2a6b086173bd99080fd)
++++ src/main/java/guru/springframework/spring5webapp/model/Book.java	(date 1535365801564)
+@@ -1,6 +1,7 @@
+ package guru.springframework.spring5webapp.model;
+ 
+ import javax.persistence.*;
++import javax.xml.bind.SchemaOutputResolver;
+ import java.util.HashSet;
+ import java.util.Objects;
+ import java.util.Set;
+@@ -37,6 +38,7 @@
+     }
+ 
+     public Long getId() {
++        System.out.println("Hello world!");
+         return id;
+     }
+ 
